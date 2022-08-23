@@ -41,11 +41,10 @@ return createPortal(
 );
 }
 
-
 Modal.propTypes = {
-  largeImageURL: PropTypes.string,
-  alt: PropTypes.string,
-  onClick: PropTypes.func,
-};
+  onClose: PropTypes.func.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+  imageRequest: PropTypes.string.isRequired,
+}
 
 export default Modal;
