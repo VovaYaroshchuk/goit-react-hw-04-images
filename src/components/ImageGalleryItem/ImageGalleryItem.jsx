@@ -9,17 +9,16 @@ function ImageGalleryItem({ webformatURL, largeImageURL, alt, onClick }) {
           <li className={styles.ImageGalleryItem} onClick={() => onClick(largeImageURL)}>
             <img className={styles.ImageGalleryItemImage} src={webformatURL} alt={alt} />
         </li>
-</>
-                    
+</>       
         )  
 };
 
 
 ImageGalleryItem.propTypes = {
-  webformatURL: PropTypes.string,
-  largeImageURL: PropTypes.string,
-  alt: PropTypes.string,
-  onClick: PropTypes.func,
-};
+  webformatURL: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+}
 
-    export default ImageGalleryItem;
+export default ImageGalleryItem;
